@@ -1,0 +1,180 @@
+body {
+  font-family: Open sans, sans-serif;
+}
+
+section {
+  margin: 10px;
+  text-align: center;
+}
+
+#history {
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  height: 70px;
+  margin: 10px;
+}
+
+nav img {
+  height: 80%;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 0.2s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+#welcome {
+  position: relative;
+  background-image: url("assets/castle_index.jpg");
+  border-radius: 5px;
+  height: 400px;
+  background-size: cover;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+#welcome h1 {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: silver;
+  color: seashell;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+}
+
+.container button:hover {
+  background-color: slategrey;
+}
+
+.container_carroussel {
+  display: flex;
+  width: 630px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carroussel {
+  display: flex;
+  text-align: center;
+  width: 500%;
+}
+
+.hero_card {
+  opacity: 0.8;
+  margin: 5px;
+}
+
+.hero_card:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+#assets_table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+#assets_table td,
+#assets_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#assets_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#assets_table tr:hover {
+  background-color: #ddd;
+}
+
+#assets_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: grey;
+  color: white;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+label {
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background: #283b63;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
