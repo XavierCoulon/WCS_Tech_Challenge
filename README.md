@@ -1,2 +1,2 @@
-# WCS_Tech_Challenge
-Created with CodeSandbox
+# Wild Code School: Tech Challenge
+Quick tech challenge to enter Wild Code School.  
